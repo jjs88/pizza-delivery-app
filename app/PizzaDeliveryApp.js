@@ -61,7 +61,6 @@ var PizzaDeliveryApp = (function() {
 
       //get customers and add to customerManager and populate the list
       this.dal.getData().then(()=> {
-
         this.customerManager = new CustomerManager(this.dal.customerData);
         this.populateCustomerList(this.customerManager.customers);
 

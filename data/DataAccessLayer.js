@@ -7,20 +7,32 @@ var DataAccessLayer = (function() {
     }
 
     getData() {
-      return new Promise((resolve, reject) => {
+      // return new Promise((resolve, reject) => {
 
-        fetch(this.url, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          }
+      //   fetch(this.url, {
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //       'Accept': 'application/json'
+      //     }
+      //   })
+      //     .then(res => res.json())
+      //     .then(data => {
+      //       this.customerData = data;
+      //       resolve();
+      //     })
+      // })
+
+      // console.log(this.url);
+
+      return new Promise((resolve, reject) => {
+        $.ajax('../data/customers.json', {
+
+            success: (data, status) => {
+                this.customerData = data;
+                resolve(data);
+            }
         })
-          .then(res => res.json())
-          .then(data => {
-            this.customerData = data;
-            resolve();
-          })
-      })
+    })
     }
   }
 

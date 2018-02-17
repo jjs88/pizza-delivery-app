@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "name": "Batman"
+    },
+    {
+      "name": "Superman"
+    },
+    {
+      "name": "Thor"
+    },
+    {
+      "name": "Hulk"
+    },
+    {
+      "name": "Captain America"
+    },
+    {
+      "name": "Iron Man"
+    }
+  ]
+}

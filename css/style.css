@@ -1,0 +1,212 @@
+body {
+  background-image: linear-gradient(45deg, #dba24a 15%, #fffa8a 100%);
+  font-family: 'Roboto', sans-serif;
+  height:100vh;
+}
+
+
+.container {
+  /* border:1px solid black; */
+  display: flex;
+  height:400px;
+  margin: 0 auto;
+  width:900px;
+}
+
+.summary-container {
+  background-color: #dba24a;
+  border-bottom: 1px solid #dba24a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.summary-container > * {
+  margin:20px;
+}
+
+
+
+h3 {
+  margin-bottom:0;
+  margin-top:0;
+}
+
+.customer-list {
+  /* border:1px solid red; */
+  color:#ce0000;
+  padding:5px;
+  width:25%;
+  /* flex-grow:1; */
+}
+
+.customer-list > * {
+  transition: .2s all;
+}
+
+.customer-list > *:not(:first-child):hover {
+  cursor: pointer;
+  padding:5px;
+  transform: scale(1.1);
+}
+
+.list-item {
+  list-style-type: none;
+  padding:5px;
+}
+
+.content {
+  border-left:1px solid #dba24a;
+  border-bottom:1px solid #dba24a;
+  /* box-shadow: 3px 3px 3px #dba24a; */
+  border-radius: 5px;
+  color:#ce0000;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 1s all ease-in;
+  /* flex-grow: 2; */
+  width:55%;
+  padding:5px;
+}
+
+.customer-list-title {
+  color: #ce0000;
+  text-align: center;
+  margin-top:0;
+}
+
+.opening-title {
+  color:#ce0000;
+  margin-top:0;
+  text-align: center;
+}
+
+.current-customer {
+  padding:10px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.button {
+  color:#fffa8a;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #e12301;
+  border-radius: 5px;
+  padding:5px;
+  display: block;
+  text-align: center;
+  transform: scale(.98);
+  transition: .2s all;
+  margin: 0 auto;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.checkboxes > * {
+  padding:12px;
+}
+
+.checkbox-container {
+  position: relative;
+}
+
+.box {
+  width:15px;
+  height:15px;
+  border:1px solid  #e12301;
+  position: absolute;
+  left:-8px;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+  position: absolute;
+}
+
+input[type="checkbox"]:checked + label .box {
+  background-color: #dba24a;
+}
+
+
+.radio-selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-selection > * {
+  padding:12px;
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom:0;
+  display: flex;
+  width:100%;
+}
+
+.fixed-bottom > * {
+  padding:20px;
+}
+
+.fixed-bottom > *:last-child  {
+  margin-left:auto;
+}
+
+.btn-submit {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+}
+
+.order:not(:first-child) {
+  margin-top:10px;
+}
+
+.order {
+  border-bottom:1px solid #dba24a;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+.orders-title {
+  margin-top:0;
+}
+
+.orders-content {
+  color: #ce0000;
+  margin-left:15px;
+  width:20%;
+}
+
+.order-name {
+  font-size: 95%;
+  font-weight: 600;
+}
+
+.toppings {
+  font-size: 90%;
+  font-style: italic;
+}
+
+.base {
+  font-size: 95%;
+}

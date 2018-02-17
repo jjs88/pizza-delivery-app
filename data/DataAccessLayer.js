@@ -25,7 +25,7 @@ var DataAccessLayer = (function() {
       // console.log(this.url);
 
       return new Promise((resolve, reject) => {
-        $.ajax('../data/customers.json', {
+        $.ajax(this.url, {
 
             success: (data, status) => {
                 this.customerData = data;
